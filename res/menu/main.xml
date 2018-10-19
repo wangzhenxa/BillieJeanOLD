@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ontim.billiejean.MainActivity" >
+    <!--<item-->
+        <!--android:id="@+id/action_stop"-->
+        <!--android:showAsAction="withText|ifRoom"-->
+        <!--android:title="@string/stop_test_text"/>-->
+</menu>

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ontim.billiejean.BillieJean$PlaceholderFragment">
+
+    <include
+            layout="@layout/count_info"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_tag"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <TextView
+            android:id="@+id/test_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:text="@string/test_info"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_restart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:textSize="20sp"
+            android:text="@string/set_restart_time" />
+
+        <EditText
+            android:id="@+id/interval_time"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:inputType="number"
+            android:text="@string/restart_time" />
+    </LinearLayout>
+
+    <include
+            layout="@layout/controller_panel"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"/>
+</LinearLayout>
